@@ -1,0 +1,185 @@
+html, body {
+  background-color: #FFFFFF;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Bold;
+  src: url(fonts/Gilroy-SemiBold.otf);
+}
+
+@font-face {
+  font-family: Regular;
+  src: url(fonts/Gilroy-Regular.otf);
+}
+
+@keyframes zoom {
+  from {margin-left: 0px;}
+  to {margin-left: 30px;}
+}
+
+body {
+  text-align: left;
+  display: block;
+  border-style: solid;
+  border-width: 4px;
+  border-color: black;
+}
+
+.hero-container {
+  height: 70vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  padding: 80px 80px 40px 80px;
+  margin-bottom: 0px;
+  flex-direction: column;
+}
+
+.circles {
+  width: 300px;
+}
+
+.work-container {
+  display: flex;
+  align-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.work {
+  height: 600px;
+  width: 100%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  padding: 40px 80px 80px 80px;
+  display: flex;
+  align-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.caption {
+  height: 100%;
+}
+
+.work:hover .line {
+  width: 100px;
+  height: 4px;
+  transition: width 1s;
+}
+
+.new {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.point {
+  margin-left: -12px;
+  transform: scale(1.2);
+}
+.line {
+  width: 70px;
+  height: 4px;
+  background-color: black;
+  transition: width 1s;
+}
+
+.link {
+  width: 100%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  padding: 20px 80px;
+}
+
+.link:hover {
+  width: 100%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  padding: 20px 80px;
+  background-color: black;
+  text-decoration: none;
+  transition: background-color 0.5s;
+}
+.link:hover h3 {
+  color: white;
+  text-decoration: none;
+}
+
+.footer {
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  padding: 20px 80px;
+  text-align: center;
+}
+
+h1 {
+  font-family: Bold, sans-serif;
+  color: black;
+  font-size: 64px;
+  max-width: 900px;
+}
+
+.website {
+  font-family: Bold, sans-serif;
+  color: black;
+  font-size: 24px;
+  text-decoration: none;
+}
+.website:hover {
+  text-decoration: underline;
+}
+
+p {
+  font-family: Regular;
+  color: black;
+  margin-top: 5px;
+  padding-bottom: 20px;
+  font-size: 18px;
+  line-height: 140%;
+}
+
+h3 {
+  font-family: Bold;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+@media (max-width: 1000px) {
+  .work-container {
+    flex-wrap: wrap;
+  }
+  #first {
+    order: 1;
+  }
+  #second {
+    order: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 48px;
+  }
+}
+
+#tlc {
+  margin-bottom: 40px;
+}
